@@ -12,15 +12,15 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #252525;
     font-size: 15px;
-    --color1: #40FF00;
-    --color2: #FCF525;
-    --color4: #2ECCFA;
+    --color_gruen: #40FF00;
+    --color_blau: #FCF525;
+    --color_gelb: #2ECCFA;
 }
 
 .content {
     min-height: 100%;
     position: relative;
-    background-color: rgba(225, 245, 37, .25);
+    background-color: rgba(225, 245, 37, .25); /* var(--color_gelb) 25% opacity */
 }
 
 a {
@@ -35,7 +35,7 @@ article {
 
 article h1, article h2, article h3 {
     font-family: 'Open Sans', sans-serif;
-    color: var(--color4);
+    color: var(--color_gelb);
 }
 
 /* Header */
@@ -44,7 +44,7 @@ header {
     height: 250px;
     position: fixed;
     top: 0;
-    border-bottom: 1em solid var(--color1);
+    border-bottom: 1em solid var(--color_gruen);
 }
 
 header a {
@@ -60,7 +60,7 @@ nav {
     margin-top: calc(250px + 2em);
     margin-left: 2em;
     width: 13em;
-    background: var(--color1);
+    background: var(--color_gruen);
     padding: 1em;
 }
 
@@ -80,20 +80,20 @@ nav li {
 
 nav li.active {
     padding: 1em 1em 1em .75em;
-    border-left: .25em solid var(--color2);
+    border-left: .25em solid var(--color_blau);
 }
 
 nav li:hover {
     padding: 1em .75em .75em 1em;
     border-width: 0 .25em .25em 0;
-    border-color: var(--color4);
+    border-color: var(--color_gelb);
 }
 
 nav li.active:hover {
     padding: 1em .75em .75em .75em;
     border-width: 0 .25em .25em .25em;
-    border-color: var(--color4);
-    border-left-color: var(--color2);
+    border-color: var(--color_gelb);
+    border-left-color: var(--color_blau);
 }
 
 nav li a {
@@ -127,12 +127,12 @@ article h2:first-of-type {
 }
 
 article a {
-    color: var(--color1);
+    color: var(--color_gruen);
 }
 
 article a:hover {
     color: white;
-    background-color: var(--color1);
+    background-color: var(--color_gruen);
 }
 
 article a[href]:before {
@@ -183,7 +183,7 @@ article .footnotes sup {
 .page57601 article img {
     display: block;
     position: relative;
-    top: -1.5em;
+    top: -1em;
     height: 20em;
 }
 
@@ -208,7 +208,7 @@ footer {
     left: 20%;
     text-align: center;
     font-size: 110%;
-    color: var(--color1);
+    color: var(--color_gruen);
 }
 
 footer a:not(:last-child):after {
