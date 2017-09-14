@@ -52,6 +52,19 @@ header a {
     height: 100%;
 }
 
+header::before {
+    background-image: url("/images/Logo.min.svg");
+    background-repeat: no-repeat;
+    content:  "Guido Lindner";
+    margin-top: 6em;
+    margin-left: 5em;
+    display: block;
+    width: 13em;
+    height: 13em;
+    padding-top: 6.5em;
+    color: white;
+}
+
 /* Navigation */
 nav {
     position: fixed;
@@ -237,6 +250,10 @@ footer a:not(:last-child):after {
     header {
         height: 150px;
     }
+    header::before {
+        margin-top: .7em;
+        margin-left: 2em;
+    }
 
     nav {
         margin-left: 0em;
@@ -254,6 +271,10 @@ footer a:not(:last-child):after {
 @media (max-width: 44em) {
     header {
         border-bottom-width: 0em;
+    }
+    header::before {
+        margin-top: 1em;
+        margin-left: 1em;
     }
 
     nav:before {
