@@ -12,13 +12,20 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #252525;
     font-size: 15px;
+    /*!!! --color_gruen: #40FF00; */
+    --color_gruen: #95b25e;
+    /*!!! --color_gelb: #FCF525; */
+    --color_gelb: #f1e092;
+    /*!!! --color_blau: #2ECCFA; */
+    /*! --color_blau: #4d4b50; */
+    --color_blau: #4f6733;
     overflow-y: scroll;
 }
 
 .content {
     min-height: 100%;
     position: relative;
-    background-color: #f1e092;
+    background-color: var(--color_gelb); /* var(--color_gelb) 25% opacity */
 }
 
 a {
@@ -33,7 +40,7 @@ article {
 
 article h1, article h2, article h3 {
     font-family: 'Open Sans', sans-serif;
-    color: #4f6733;
+    color: var(--color_blau);
 }
 
 /* Header */
@@ -42,7 +49,7 @@ header {
     height: 250px;
     position: fixed;
     top: 0;
-    border-bottom: 1em solid #95b25e;
+    border-bottom: 1em solid var(--color_gruen);
     background-position: center center;
 }
 
@@ -56,10 +63,10 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    margin-top: 280px;
+    margin-top: calc(250px + 2em);
     margin-left: 2em;
     width: 13em;
-    background: #95b25e;
+    background: var(--color_gruen);
     padding: 1em;
 }
 
@@ -79,20 +86,20 @@ nav li {
 
 nav li.active {
     padding: 1em 1em 1em .75em;
-    border-left: .25em solid #f1e092;
+    border-left: .25em solid var(--color_gelb);
 }
 
 nav li:hover {
     padding: 1em .75em .75em 1em;
     border-width: 0 .25em .25em 0;
-    border-color: #4f6733;
+    border-color: var(--color_blau);
 }
 
 nav li.active:hover {
     padding: 1em .75em .75em .75em;
     border-width: 0 .25em .25em .25em;
-    border-color: #4f6733;
-    border-left-color: #f1e092;
+    border-color: var(--color_blau);
+    border-left-color: var(--color_gelb);
 }
 
 nav li a {
@@ -103,7 +110,7 @@ nav li a {
 /* Main */
 main {
     /* background-color: #ffffff; */
-    padding-top: 280px;
+    padding-top: calc(250px + 2em);
     padding-left: 20em;
     padding-right: 5em;
     padding-bottom: 7em;
@@ -129,13 +136,13 @@ article h3 {
 }
 
 article a {
-    /*!!! color: #95b25e; */
-    color: #4f6733;
+    /*!!! color: var(--color_gruen); */
+    color: var(--color_blau);
 }
 
 article a:hover {
     color: white;
-    background-color: #95b25e;
+    background-color: var(--color_gruen);
     border-radius: 5px; /*!!! */
 }
 
@@ -219,14 +226,14 @@ footer li:not(:last-child):after {
 }
 
 footer a {
-    /*!!! color: #95b25e;*/
+    /*!!! color: var(--color_gruen);*/
     padding: 0 .25em .1em .25em;
-    color: #4f6733;
+    color: var(--color_blau);
 }
 
 footer a:hover {
     color: white;
-    background-color: #95b25e;
+    background-color: var(--color_gruen);
     border-radius: 5px; /*!!! */
 }
 
@@ -268,12 +275,10 @@ footer a:hover {
     content: "➤ "
 }
 
-.page8ac4f article,
-.page4f9a2 article {
+.page8ac4f article {
     column-count: 2;
 }
-.page8ac4f article li,
-.page4f9a2 article li {
+.page8ac4f article li {
     margin-bottom: 1em;
 }
 
@@ -297,10 +302,10 @@ footer a:hover {
         height: 50px;
     }
     nav {
-        margin-top: 80px;
+        margin-top: calc(50px + 2em);
     }
     main {
-        padding-top: 80px;
+        padding-top: calc(50px + 2em);
     }
 }
 
@@ -316,7 +321,7 @@ footer a:hover {
     }
 
     main {
-        padding-top: 180px;
+        padding-top: calc(150px + 2em);
         padding-left: 15em;
         padding-right: 1em;
         padding-bottom: 5em;
@@ -343,10 +348,10 @@ footer a:hover {
         height: 50px;
     }
     nav {
-        margin-top: 50px;
+        margin-top: calc(50px);
     }
     main {
-        padding-top: 50px;
+        padding-top: calc(50px);
     }
 }
 
@@ -382,7 +387,7 @@ footer a:hover {
     }
 
     main {
-        margin-top: 195px;
+        margin-top: calc(150px + 3em);
         padding-top: 1em;
         padding-left: 1em;
         padding-right: 1em;
@@ -408,10 +413,10 @@ footer a:hover {
         height: 50px;
     }
     nav {
-        margin-top: 50px;
+        margin-top: calc(50px);
     }
     main {
-        margin-top: 95px;
+        margin-top: calc(50px + 3em);
     }
     nav ul li {
         padding: .5em;

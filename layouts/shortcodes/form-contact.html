@@ -1,11 +1,5 @@
-<form action="https://formspree.io/{{ .Get "email" }}" method="POST" role="form">
-
-    <h3 color="red">
-        <a href="https://www.google.com/recaptcha">
-            reCaptcha registrieren
-        </a>
-    </h3>
-
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<form action="https://formcarry.com/s/{{ .Get "token" }}" method="POST" accept-charset="UTF-8" >
     <label>
         Name
         <input type="text" id="name" name="name" required placeholder=" " aria-labelledby="name"/>
@@ -13,14 +7,15 @@
 
     <label>
         E-Mail
-        <input type="text" id="email" email="emailemail" required placeholder=" " aria-labelledby="email"/>
+        <input type="text" id="email" name="email" required placeholder=" " aria-labelledby="email"/>
     </label>
 
     <label>
         Ihre Nachricht
-        <textarea id="message" name="message" aria-labelledby="message"></textarea>
+        <textarea id="nachricht" name="nachricht" aria-labelledby="nachricht"></textarea>
     </label>
 
-    <input type="submit" value="Senden" />
-
+    <div class="g-recaptcha" data-sitekey="{{ .Get "captcha" }}"></div>
+    <input type="submit" value="Absenden">
+</button>
 </form>

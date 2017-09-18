@@ -1,3 +1,5 @@
+<ul>
 {{ range .Site.Menus.foot }}
-<a href="{{ .URL }}">{{ .Name }}</a>
+<li><a href="{{ .URL }}">{{ .Name }}</a></li>
 {{ end }}
+</ul>

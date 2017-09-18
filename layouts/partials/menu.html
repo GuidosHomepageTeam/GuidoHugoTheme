@@ -1,8 +1,8 @@
 <ul>
-    {{ with .Site.GetPage "home" "" }}
-    <li><a href="{{ .URL }}">{{ .LinkTitle }}</a></li>
-    {{ end }}
     {{ $currentPage := . }}
+    {{ with .Site.GetPage "home" "" }}
+    <li {{ if $currentPage.IsHome }} class="active"{{ end }}><a href="{{ .URL }}">{{ .LinkTitle }}</a></li>
+    {{ end }}
     {{ range .Site.Menus.left }}
     <li{{ if $currentPage.IsMenuCurrent "left" . }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>
     {{ end }}
