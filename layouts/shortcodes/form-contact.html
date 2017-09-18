@@ -1,7 +1,7 @@
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <form action="https://formcarry.com/s/{{ .Get "token" }}" method="POST" accept-charset="UTF-8" >
     <label>
-        Name
+        Name:
         <input type="text" id="name" name="name" required placeholder=" " aria-labelledby="name"/>
     </label>
 
@@ -11,8 +11,7 @@
     </label>
 
     <label>
-        Ihre Nachricht
-        <textarea id="nachricht" name="nachricht" aria-labelledby="nachricht"></textarea>
+        <textarea id="nachricht" name="nachricht" placeholder="Ihre Nachricht" aria-labelledby="nachricht"></textarea>
     </label>
 
     <div class="g-recaptcha" data-sitekey="{{ .Get "captcha" }}"></div>
