@@ -12,7 +12,7 @@
   <meta name="seite" content="single.html">
   {{ block "redirect" . }}{{ end }}
 
-  <link href="https://fonts.googleapis.com/css?family=Kalam|Droid+Serif|Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kalam%7CDroid+Serif%7COpen+Sans" rel="stylesheet">
   <link href='{{ "style.css" | absURL }}' rel='stylesheet' type="text/css" />
 
   {{/* Add SEO &mp;  Social metadata, see https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L190 */}}
@@ -21,7 +21,7 @@
 <body>
   <div class="content page{{ substr (.URL | md5) 0 5 }}">
     <header style="background-image: url('{{ .Site.BaseURL }}images/{{ $.Param "image" }}_bg.jpg');">
-      <a href="{{ .Site.BaseURL }}" ></a>
+      <a href="{{ .Site.BaseURL }}" style="color: transparent;">zurück zur Hauptseite</a>
     </header>
 
     <nav>
