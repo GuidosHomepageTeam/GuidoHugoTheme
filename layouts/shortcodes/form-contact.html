@@ -2,17 +2,16 @@
 <form action="https://formcarry.com/s/{{ .Get "token" }}" method="POST" accept-charset="UTF-8" >
     <label>
         Name:
-        <input type="text" id="name" name="name" required aria-labelledby="name"/>
+        <input type="text" id="name" name="name" required />
     </label>
 
     <label>
         E-Mail:
-        <input type="text" id="email" name="email" required aria-labelledby="email"/>
+        <input type="text" id="email" name="email" required />
     </label>
 
-    <textarea id="nachricht" name="nachricht" required placeholder="Ihre Nachricht" aria-labelledby="nachricht"></textarea>
+    <textarea id="nachricht" name="nachricht" required placeholder="Ihre Nachricht" ></textarea>
 
     <div class="g-recaptcha" data-sitekey="{{ .Get "captcha" }}"></div>
     <input type="submit" value="Absenden">
-</button>
 </form>
