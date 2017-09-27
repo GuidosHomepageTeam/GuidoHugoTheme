@@ -14,17 +14,17 @@ body {
     color: #252525;
     font-size: 15px;
     overflow-y: scroll;
-    /*!!!
-    --color_gruen: #95b25e;
-    --color_gelb: #f1e092;
-    --color_blau: #4f6733;
+    /* !!!
+    --color-gruen: #95b25e;
+    --color-gelb: #f1e092;
+    --color-blau: #4f6733;
     */
 }
 
 .content {
     min-height: 100%;
     position: relative;
-    background-color: #f1e092; /* var(--color_gelb) */
+    background-color: #f1e092; /* var(--color-gelb) */
 }
 
 a {
@@ -39,7 +39,7 @@ article {
 
 article h1, article h2, article h3 {
     font-family: 'Open Sans', sans-serif;
-    color: #4f6733; /* var(--color_blau) */
+    color: #4f6733; /* var(--color-blau) */
 }
 
 /* Header */
@@ -48,7 +48,7 @@ header {
     height: 250px;
     position: fixed;
     top: 0;
-    border-bottom: 1em solid #95b25e; /* var(--color_gruen) */
+    border-bottom: 1em solid #95b25e; /* var(--color-gruen) */
     background-position: center 80%;
 }
 
@@ -65,7 +65,7 @@ nav {
     margin-top: 280px;
     margin-left: 2em;
     width: 13em;
-    background: #95b25e; /* var(--color_gruen) */
+    background: #95b25e; /* var(--color-gruen) */
     padding: 1em;
 }
 
@@ -86,7 +86,7 @@ nav ul li {
 nav ul li.active {
     padding-left: .75em;
     border-left-width: .25em;
-    border-left-color: #f1e092; /* var(--color_gelb) */
+    border-left-color: #f1e092; /* var(--color-gelb) */
 }
 
 nav ul li:hover {
@@ -94,8 +94,8 @@ nav ul li:hover {
     padding-bottom: .75em;
     border-right-width: .25em;
     border-bottom-width: .25em;
-    border-right-color: #4f6733; /* var(--color_blau) */
-    border-bottom-color: #4f6733; /* var(--color_blau) */
+    border-right-color: #4f6733; /* var(--color-blau) */
+    border-bottom-color: #4f6733; /* var(--color-blau) */
 }
 
 nav ul li a {
@@ -132,12 +132,12 @@ article h3 {
 }
 
 article a {
-    color: #4f6733; /* var(--color_blau) */
+    color: #4f6733; /* var(--color-blau) */
 }
 
 article a:hover {
-    color: #f1e092; /* var(--color_gelb) */
-    background-color: #4f6733; /* var(--color_blau) */
+    color: #f1e092; /* var(--color-gelb) */
+    background-color: #4f6733; /* var(--color-blau) */
     border-radius: 5px;
 }
 
@@ -237,12 +237,12 @@ footer li:not(:last-child):after {
 
 footer a {
     padding: 0 .25em .1em .25em;
-    color: #4f6733; /* var(--color_blau) */
+    color: #4f6733; /* var(--color-blau) */
 }
 
 footer a:hover {
-    color: #f1e092; /* var(--color_gelb) */
-    background-color: #4f6733; /* var(--color_blau) */
+    color: #f1e092; /* var(--color-gelb) */
+    background-color: #4f6733; /* var(--color-blau) */
     border-radius: 5px;
 }
 

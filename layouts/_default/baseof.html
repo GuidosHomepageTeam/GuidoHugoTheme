@@ -12,8 +12,8 @@
   <meta name="description" content="Psychotherapeutische Privatpraxis Guido Lindner in Naumburg, Thüringen">
   {{ block "redirect" . }}{{ end }}
 
-  <link href="https://fonts.googleapis.com/css?family=Kalam%7CDroid+Serif%7COpen+Sans" rel="stylesheet">
-  <link href='{{ "style.css" | absURL }}' rel='stylesheet' type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Kalam%7CDroid+Serif%7COpen+Sans" media="screen,print" rel="stylesheet">
+  <link href='{{ "style.min.css" | absURL }}' rel='stylesheet' />
 
   {{/* Add SEO &mp;  Social metadata, see https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L190 */}}
   {{- template "_internal/opengraph.html" . -}}
